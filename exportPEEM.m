@@ -1,7 +1,7 @@
 function exportPEEM(app)
     %Exports peem images
     % Save results
-    [file,path] = uiputfile('*.tif','Save PEEM images');
+    [file,path] = uiputfile('*.tif','Save PEEM images',app.pathname);
     if ~ischar(file)
         return;
     end
