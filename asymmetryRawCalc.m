@@ -31,8 +31,8 @@ function asymmetryRawCalc(app)
     end
     % Display aligned images
     % Alter the slider limit to reflect the amount of p3b images imported
-    app.view_imageSpinner.Value = 1;
-    app.view_imageSpinner.Enable = 1;
+    %app.view_imageSpinner.Value = 1;
+    %app.view_imageSpinner.Enable = 1;
     % Alter the dropdown menu to show the raw p3b images
     app.view_imageType.Value = "Raw asymmetry";
     app.view_imageType.Enable = 1;
