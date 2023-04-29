@@ -50,6 +50,7 @@ function exportPEEM(app)
     t.close();
     
     % Write flatfield XA- and XMCD-PEEM images
+    %{
     A = app.imgXA';
     A(all(isnan(A),2),:) = [];
     A(1:10,:) = [];
@@ -91,5 +92,6 @@ function exportPEEM(app)
     t.setTag(tagstruct);
     t.write(rot90(flip(single(A),2),2));
     t.close();
+    %}
 end
 

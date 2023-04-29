@@ -9,8 +9,8 @@ function im = oponim(app,mode)
     % Find out the indices of app.avgSet which corresponds with whatever dropdown value was selected
     idxA = find(round(vertcat(app.avgSet.tag),1) == app.imADrop.Value);
     idxB = find(round(vertcat(app.avgSet.tag),1) == app.imBDrop.Value);
-    imA = double(app.avgSet(idxA).im);
-    imB = double(app.avgSet(idxB).im);
+    imA = double(app.avgSet(idxA).imAligned);
+    imB = double(app.avgSet(idxB).imAligned);
 
     % Performs the calculations
     switch mode
